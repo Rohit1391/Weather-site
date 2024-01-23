@@ -1,0 +1,105 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffdb58, #ffac33); /* Gradient background */
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.4;
+}
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+}
+.smaller {
+    font-size: 190%; /* Adjust the percentage as needed */
+}
+.weather {
+    z-index: 3;
+    color: rgb(44, 229, 56);
+    display: flex;
+    border-radius: 0 30px;
+}
+
+.weather > div {
+    margin: 0.64rem;
+}
+.weather1 {
+    font-size: 4rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 1rem;
+}
+.weather3 span {
+ margin: 0.5rem;
+}
+
+.weather3 img {
+    width: 3rem;
+}
+nav {
+    border-radius: 100px 100px 0 0;
+    padding: 1rem 0;
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.19);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 165, 0.244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav form {
+    width: 69%;
+    grid-template-columns: 5fr 1fr;
+    display: grid;
+}
+.searchfield {
+    font-size: 25px;
+    outline: none;
+    color: antiquewhite;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    width: 100%;
+}
+nav form button {
+    background-color: rgb(230, 105, 86);
+    border-radius: 0 25px;
+    font-size: 1.5rem;
+    color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
